@@ -112,4 +112,11 @@ public class Reloj {
         r_auxi=new Reloj(S3);
         return r_auxi.toString();
     }
+
+
+    public String verReloj() {
+        return String.format("[%02d", this.hora) + ":" + 
+			   String.format("%02d", this.minuto) + ":" +
+			   String.format("%02d]", this.segundo); 
+    }
 }
